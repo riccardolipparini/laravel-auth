@@ -8,8 +8,22 @@
     @method('POST')
     @csrf
 
-    <input type="text" name="email">
-    <input type="password" name="password">
+    <input type="text" name="email" placeholder="email">
+    <input type="password" name="password" placeholder="password">
+    <input type="submit" value="login">
+</form>
+<hr>
+
+<h1>register</h1>
+<form action="route{{'register'}}" method="POST">
+
+    @method('POST')
+    @csrf
+
+    <input type="text" name="name" placeholder="name">
+    <input type="text" name="email" placeholder="email">
+    <input type="password" name="password" placeholder="password">
+    <input type="password" name="password-confirmation" placeholder="password-confirm">
     <input type="submit" value="login">
 </form>
     
